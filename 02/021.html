@@ -37,7 +37,11 @@
 
     <!--메인 화면-->
     <div class="maincont">
-      <div class="title">계약 목록</div>
+      <div class="title2"><a href="02.html"><img src="../img/back.png"></a><span>가을 배추 14차 방제</span></div>
+      <div class="btns2">
+        <div class="adbtn3">작업 목록</div><div class="adbtn4">구성원</div><div class="adbtn4">작업 기록</div><div class="adbtn4">통계</div><div class="adbtn4" style="border-radius:0 4px 4px 0;">설정</div>
+        <div class="adbtn3" style="background-color:#56ab63; border: 1px solid #56ab63; border-radius:4px; margin-left:10px;"><img src="../img/map.png" style="width:17px;height:17px;padding-right:5px;">지도</div>
+      </div>
       <table>
         <thead>
           <tr>
@@ -88,7 +92,8 @@
       </table>
       <div class="bottom">
         <div class="num"><a>〈</a><a style="color:#3C64B1; font-weight:700">1</a><a>2</a><a>3</a><a>4</a><a>...</a><a>17</a><a>〉</a></div>
-        <div class="add" onClick="document.getElementById('modal').style.display='block'" style="cursor:pointer"><img src="../img/add.png"><span>계약 생성</span></div>
+        <div class="add" onClick="document.getElementById('modal').style.display='block'" style="cursor:pointer"><img src="../img/add.png"><span>작업 입력</span></div>
+        <div class="add" style="cursor:pointer"><img src="../img/up.png"><span>파일 업로드</span></div>
         <div class="search"><img src="../img/search.png"><span>검색어를 입력해주세요.</span></div>
       </div>
     </div>
@@ -96,12 +101,14 @@
     <!-- 모달 -->
     <div id="modal" class="md">
       <div class="bg"></div>
-      <div class="fg">
+      <div class="fg" style="margin:-200px 0 0 -200px;">
         <div class="fgin">
-          <span class="mdtitle">계약 생성</span>
-          <span class="left">계약명</span><input type="text" placeholder=" 계약명을 입력해주세요." class="right2">
-          <span class="left">방제단</span><span class="right">방제단 선택</span>
-          <span class="left">상태</span><span class="right">상태 선택</span>
+          <span class="mdtitle">작업 추가</span>
+          <span class="left">주소</span><input type="text" placeholder=" 지번주소를 입력해주세요." class="right2">
+          <span class="left">농주</span><input type="text" placeholder=" 농주명을 입력해주세요." class="right2">
+          <span class="left">면적</span><input type="text" placeholder=" 면적을 입력해주세요." class="right2">
+          <span class="left">농주 연락처</span><input type="text" placeholder=" 농주 연락처를 입력해주세요." class="right2">
+          <span class="left">메모</span><input type="text" placeholder=" 메모를 입력해주세요." class="right2">
           <button class="cancel" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer">취소</button>
           <button class="ok" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer">생성</button>
         </div>

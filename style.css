@@ -175,7 +175,7 @@ td {
   padding: 10px 50px 10px 10px;
 }
 
-.search img, .add img {
+.search img, .add img, .adbtn3 img {
   float: left;
   width: 20px;
   height: 20px;
@@ -235,6 +235,51 @@ td {
   padding: 10px 20px;
   border-radius: 4px;
   box-shadow: #3c64b1 0 0 3px;
+}
+
+.over .adbtn1 {
+  float: left;
+  color: white;
+  background-color: #3c64b1;
+  border: 1px solid #3c64b1;
+  padding: 10px 20px;
+  border-radius: 4px 0 0 4px;
+}
+
+.over .adbtn2 {
+  float: left;
+  color: #495057;
+  background-color: white;
+  border: 1px solid #DEE2E6;
+  padding: 10px 20px;
+}
+
+/*계약 페이지 탭*/
+.btns2 {
+  font-size: 13px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.adbtn3 {
+  float: left;
+  color: white;
+  background-color: #3c64b1;
+  border: 1px solid #3c64b1;
+  padding: 7px 13px;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer
+}
+
+.adbtn4 {
+  float: left;
+  padding: 7px 13px;
+  color: #495057;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  cursor: pointer
 }
 
 /*팝업*/
