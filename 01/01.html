@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>방제 지도 - 농작업 스케줄링 플랫폼 (work)</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../style.css">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="../script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!--상단 메뉴-->
+      <div class="navbar">
+        <div id="logo">
+          <a href="../index.html">
+            <img src="../img/w_logo.png" width="100px" alt="더피치">
+          </a>
+        </div>
+        <div class="mypage">
+          <a href=""><img src="../img/mypage.png" alt="마이페이지"></a>
+          <a href=""><img src="../img/noti.png" alt="알림센터"></a>
+        </div>
+        <div class="btns">
+          <a href="01.html"><div class="navbtn" style="border-bottom: 2px solid white;">방제 지도</div></a>
+          <a href="../02/02.html"><div class="navbtn">계약</div></a>
+        </div>
+      </div>
+    </header>
+
+    <!--메인 화면-->
+    <div class="maincont">
+      <div class="title">
+        내 농지
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 95%;">농지 주소</th><th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td onClick="document.getElementById('modal2').style.display='block'" style="cursor:pointer">전북 익산시 황등면 신성리 362-3</td><td style="color: #CB1010; font-weight:700; text-decoration: underline;">삭제</td>
+          </tr>
+          <tr>
+            <td>전북 익산시 황등면 율촌리 616-3</td><td style="color: #CB1010; font-weight:700; text-decoration: underline;">삭제</td>
+          </tr>
+          <tr>
+            <td>전북 익산시 황등면 죽촌리 312-11</td><td style="color: #CB1010; font-weight:700; text-decoration: underline;">삭제</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div class="bottom">
+       <div class="add" onClick="document.getElementById('modal').style.display='block'" style="cursor:pointer"><img src="../img/add.png"><span>농지 추가</span></div>
+       <div class="search"><img src="../img/search.png"><span>검색어를 입력해주세요.</span></div>
+      </div>
+    </div>
+      
+    <!-- 모달 -->
+    <div id="modal" class="md">
+      <div class="bg"></div>
+      <div class="fg">
+        <div class="fgin">
+          <span class="mdtitle">농지 추가</span>
+          <span class="left">농지 주소</span><input type="text" placeholder=" 지번주소를 입력해주세요." class="right2">
+          <span class="left">메모</span><input type="text" placeholder=" 메모를 입력해주세요." class="right2">
+          <button class="cancel" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer">취소</button>
+          <button class="ok" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer">추가</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal2" class="md">
+      <div class="bg"></div>
+      <div class="fg">
+        <div class="fgin">
+          <span class="mdtitle">농지 정보</span>
+          <span class="left">농지 주소</span><span class="right">전북 익산시 황등면 죽촌리 312-11</span>
+          <span class="left">최근 방제 일시</span><span class="right">2022.08.28. 13:11:16</span>
+          <span class="left">상태</span><span class="right">예약된 방제 없음</span>
+          <button class="cancel" onclick="document.getElementById('modal2').style.display='none'" type="button" style="cursor:pointer">취소</button>
+          <button class="ok" onclick="document.getElementById('modal2').style.display='none'" type="button" style="cursor:pointer">방제 신청</button>
+        </div>
+      </div>
+    </div>    
+    <!-- 모달 -->
+      
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>계약 - 농작업 스케줄링 플랫폼</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../style.css">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="../script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!--상단 메뉴-->
+      <div class="navbar">
+        <div id="logo">
+          <a href="../index.html">
+            <img src="../img/w_logo.png" width="100px" alt="더피치">
+          </a>
+        </div>
+        <div class="mypage">
+          <a href=""><img src="../img/mypage.png" alt="마이페이지"></a>
+          <a href=""><img src="../img/noti.png" alt="알림센터"></a>
+        </div>
+        <div class="btns">
+          <a href="../index.html"><div class="navbtn">방제 지도</div></a>
+          <a href="02.html"><div class="navbtn" style="border-bottom: 2px solid white;">계약</div></a>
+        </div>
+      </div>
+    </header>
+
+    <!--메인 화면-->
+    <div class="maincont">
+      <div class="title">계약 목록</div>
+      <table>
+        <thead>
+          <tr>
+            <th style="width:30%;">계약명</th><th style="width:60%;">방제단</th><th>상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="021.html">가을 배추 14차 방제</a></td><td>더피치 방제단</td><td style="color:#3C64B1;">진행중</td>
+          </tr>
+          <tr>
+            <td><a href="021.html">가을 배추 13차 방제</a></td><td>더피치 방제단</td><td style="color:#3C64B1;">진행중</td>
+          </tr>
+          <tr>
+            <td><a href="021.html">가을 배추 12차 방제</a></td><td>더피치 방제단</td><td style="color:#3C64B1;">진행중</td>
+          </tr>
+          <tr>
+            <td>가을 배추 11차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 10차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 9차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 8차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 7차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 6차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 5차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 4차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 3차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+          <tr>
+            <td>가을 배추 2차 방제</td><td>더피치 방제단</td><td>완료</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="bottom">
+        <div class="num"><a>〈</a><a style="color:#3C64B1; font-weight:700">1</a><a>2</a><a>3</a><a>4</a><a>...</a><a>17</a><a>〉</a></div>
+        <div class="add" onClick="document.getElementById('modal').style.display='block'"><img src="../img/add.png"><span>계약 생성</span></div>
+        <div class="search"><img src="../img/search.png"><span>검색어를 입력해주세요.</span></div>
+      </div>
+    </div>
+      
+    <!-- 모달 -->
+    <div id="modal" class="md">
+      <div class="bg"></div>
+      <div class="fg">
+        <div class="fgin">
+          <span class="mdtitle">계약 생성</span>
+          <span class="left">계약명</span><input type="text" placeholder=" 계약명을 입력해주세요." class="right2">
+          <span class="left">방제단</span><span class="right">방제단 선택</span>
+          <span class="left">상태</span><span class="right">상태 선택</span>
+          <button class="cancel" onclick="document.getElementById('modal').style.display='none'" type="button">취소</button>
+          <button class="ok" onclick="document.getElementById('modal').style.display='none'" type="button">생성</button>
+        </div>
+      </div>
+    </div>
+    <!-- 모달 -->
+  </body>
+</html>

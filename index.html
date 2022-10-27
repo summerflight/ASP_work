@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>농작업 스케줄링 플랫폼 (방제단)</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <!--script-->
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!--상단 메뉴-->
+      <div class="navbar">
+        <div id="logo">
+          <a href="index.html">
+            <img src="img/w_logo.png" width="100px" alt="더피치">
+          </a>
+        </div>
+        <div class="mypage">
+          <a href=""><img src="img/mypage.png" alt="마이페이지"></a>
+          <a href=""><img src="img/noti.png" alt="알림센터"></a>
+        </div>
+        <div class="btns">
+          <a href="index.html" style="border-bottom: 2px solid white;"><div class="navbtn">방제 지도</div></a>
+          <a href="02/02.html"><div class="navbtn">계약</div></a>
+        </div>
+      </div>
+    </header>
+
+    <!--메인 화면-->
+     <div id="map">
+       <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac2092b53645b08d8939597958710784"></script>
+       <script>
+         var container = document.getElementById('map');
+         var options = {
+           center: new kakao.maps.LatLng(35.9781241, 126.9657956),
+           level: 3,
+           mapTypeId: kakao.maps.MapTypeId. SKYVIEW
+         };
+         var map = new kakao.maps.Map(container, options);
+         var polygon = new kakao.maps.Polygon({
+          map : map,
+          path : [
+            new kakao.maps.LatLng(35.978780, 126.966190),
+            new kakao.maps.LatLng(35.977812, 126.966556),
+            new kakao.maps.LatLng(35.977440, 126.964986),
+            new kakao.maps.LatLng(35.978397, 126.964634)
+          ],
+          fillColor: '#4A6FF1',
+          fillOpacity: 0.4,
+          strokeWeight: 3,
+          strokeColor: '#4A6FF1',
+          strokeOpacity: 0.9,
+          strokeStyle: 'solid'
+         });
+       </script>
+     </div>
+    <!--오버-->
+    <div class="over">
+      <div class="ad">전북 익산시 황등면 신성리 362-3<img src="img/arrow.png" alt="농지 목록"></div>
+      <a href="01/01.html"><div class="adbtn">농지 관리</div></a>
+    </div>
+  </body>
+</html>

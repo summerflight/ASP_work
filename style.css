@@ -1,0 +1,252 @@
+body, div {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 상하단 고정 */
+header {
+  background-color: #3C64B1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  box-shadow: #3c64b1 0 0 3px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Links inside the navbar */
+#logo img {
+  padding: 14px 16px;
+  float: left;
+}
+
+.navbar a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mypage img {
+  width: 25px;
+  padding: 22px 10px;
+  float: right;
+}
+
+.btns {
+  overflow: hidden;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbtn {
+  font-size: 15px;
+  width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.mypage {
+  float: right;
+  color: white;
+  text-align: center;
+  width: 132px;
+  height: 70px;
+}
+/* -------------------------------------------------------------------------- */
+/* 메인 */
+.maincont {
+  width: 100%;
+  top: 70px;
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  text-align: center;
+  margin-bottom: 125px;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.maincont .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.maincont .title2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.title2 img {
+  float: left;
+  width: 26px;
+  height: 26px;
+}
+
+.maincont table {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 1px solid #DEE2E6;
+  border-collapse: collapse;
+}
+
+table a {
+  text-decoration: none;
+  color: #495057;
+}
+
+th, td {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #DEE2E6;
+  color: #495057;
+}
+
+th {
+  font-size: 13px;
+  background-color: #F8F9FA;
+}
+
+td {
+  font-size: 14px;
+}
+
+.bottom {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.num {
+  float: left;
+  padding: 10px;
+}
+
+.num a {
+  font-family: Roboto;
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.search, .add {
+  float: right;
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.search {
+  color: #495057;
+  border: 1px solid #DEE2E6;
+  padding: 10px 50px 10px 10px;
+}
+
+.search img, .add img {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+
+.search span, .add span {
+  float: left;
+  padding-left: 10px;
+}
+
+.title2 span {
+  padding-left: 10px;
+}
+
+.add {
+  padding: 10px 20px 10px 15px;
+  color: white;
+  background-color: #3C64B1;
+  border: 1px solid #3C64B1;
+}
+
+.over {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 30px;
+  z-index: 2000;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.over img {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.over .ad {
+  float: left;
+  background-color: white;
+  color: #495057;
+  border: 1px solid #DEE2E6;
+  width: 400px;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.over .adbtn {
+  float: left;
+  color: white;
+  background-color: #3C64B1;
+  border: 1px solid #3C64B1;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: #3c64b1 0 0 3px;
+}
+
+/*팝업*/
+.md {position:fixed;top:0;left:0;width:100%;height:100%;display:none;}
+.md .bg {position:absolute;top:0;left:0;width:100%;height:100%;background:#000;opacity:.5;filter:alpha(opacity=50);z-index:20000;}
+.md .fg {position:absolute;top:50%;left:50%;width:400px;margin:-150px 0 0 -200px;padding:30px;background:#fff;border-radius:4px;z-index:20000;}
+
+.fgin .mdtitle {text-align:left;display:block;margin-bottom:25px;}
+.fgin .left {font-size:12px;width:30%;float:left;color:#737B7D;height:24px;}
+.fgin .right {font-size:13px;width:67%;float:left;color:#495057;margin-bottom:15px;height:24px;}
+.fgin .right2 {font-size:12px;width:67%;float:left;color:#495057;height:18px;margin-bottom:15px;}
+
+.cancel, .ok {width: 49%;margin-top:25px;height:40px;border-radius:4px;}
+.cancel {float:left; color:#292D32; background-color:#F5F5F5; border:none;}
+.ok {float:right; color:white; background-color:#3C64B1; border:none;}
