@@ -36,7 +36,7 @@
     </header>
 
     <!--메인 화면-->
-     <div id="map">
+     <div id="map" onClick="document.getElementById('modal').style.display='block'">
        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ac2092b53645b08d8939597958710784"></script>
        <script>
          var container = document.getElementById('map');
@@ -113,5 +113,23 @@
       <div class="ad">계약 선택<img src="img/arrow.png" alt="계약 선택"></div>
       <div class="adbtn1">전체</div><div class="adbtn2">예정</div><div class="adbtn2">중단</div><div class="adbtn2" style="border-radius:0 4px 4px 0;">완료</div>
     </div>
+    <!-- 모달 -->
+    <div id="modal" class="md">
+      <div class="bg"></div>
+      <div class="fg" style="margin:-200px 0 0 -200px;">
+        <div class="fgin">
+          <span class="mdtitle">작업 정보</span>
+          <span class="left">주소</span><span class="right">전북 익산시 황등면 죽촌리 312-11</span>
+          <span class="left">농주</span><span class="right">홍길동</span>
+          <span class="left">면적</span><span class="right">290평</span>
+          <span class="left">농주 연락처</span><span class="right">010-1234-1234</span>
+          <span class="left">메모</span><span class="right" style="color:gray;">없음</span>
+          <span class="left">상태</span><span class="right">예정</span>
+          <button class="cancel" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer; color:white; background-color:#CB1010;">작업 중단</button>
+          <button class="ok" onclick="document.getElementById('modal').style.display='none'" type="button" style="cursor:pointer; background-color:#4A6FF1">작업 완료</button>
+        </div>
+      </div>
+    </div>
+    <!-- 모달 -->    
   </body>
 </html>

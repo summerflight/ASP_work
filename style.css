@@ -244,6 +244,7 @@ td {
   border: 1px solid #3c64b1;
   padding: 10px 20px;
   border-radius: 4px 0 0 4px;
+  cursor:pointer;
 }
 
 .over .adbtn2 {
@@ -252,6 +253,7 @@ td {
   background-color: white;
   border: 1px solid #DEE2E6;
   padding: 10px 20px;
+  cursor:pointer;
 }
 
 /*계약 페이지 탭*/
