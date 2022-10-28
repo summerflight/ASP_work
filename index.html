@@ -61,22 +61,21 @@
           strokeOpacity: 0.9,
           strokeStyle: 'solid'
          });
-         var polygonPath = [
-          new kakao.maps.LatLng(35.980278, 126.963538),
-          new kakao.maps.LatLng(35.980846, 126.965841),
-          new kakao.maps.LatLng(35.979886, 126.966200),
-          new kakao.maps.LatLng(35.979304, 126.963889)
-         ];
          var polygon2 = new kakao.maps.Polygon({
-          path:polygonPath,
+          map : map,
+          path : [
+            new kakao.maps.LatLng(35.980278, 126.963538),
+            new kakao.maps.LatLng(35.980846, 126.965841),
+            new kakao.maps.LatLng(35.979886, 126.966200),
+            new kakao.maps.LatLng(35.979304, 126.963889)
+          ],
+          fillColor: '#4A6FF1',
+          fillOpacity: 0.4,
           strokeWeight: 3,
           strokeColor: '#4A6FF1',
           strokeOpacity: 0.9,
-          strokeStyle: 'solid',
-          fillColor: '4A6FF1',
-          fillOpacity: 0.4
+          strokeStyle: 'solid'
          });
-
        </script>
      </div>
     <!--오버-->
